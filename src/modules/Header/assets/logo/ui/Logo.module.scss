@@ -1,0 +1,25 @@
+.Logo {
+    width: 74px;
+    height: 84px;
+    background-image: url('./img/logo_mob.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    flex-shrink: 0;
+
+    @media(min-width: 800px) {
+        background-image: url('./img/logo_bg_desc.png');
+    }
+
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

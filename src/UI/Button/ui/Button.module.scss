@@ -1,0 +1,56 @@
+.Button {
+    padding: 12px 17px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: var(--font-size-l);
+    cursor: pointer;
+    font-weight: 700;
+    height: 50px;
+    position: relative;
+}
+
+.clear-blue {
+    background-color: white;
+    color: #00B7EC;
+    border: 1px solid #00B7EC;
+
+    &:active {
+        background-color: #00B7EC;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+.clear-green {
+    background-color: white;
+    border: 1px solid #9BCC37;
+    color: #9BCC37;
+
+    &:active {
+        background-color: #9BCC37;
+        color: white;
+    }
+}
+
+.green {
+    background-color: #9BCC37;
+    color: white;
+    border: 1px solid #9BCC37;
+
+    &:active {
+        background-color: white;
+        color: #9BCC37;
+    }
+}
+
+.blue {
+    background-color: #00B7EC;
+    color: white;
+
+    &:active {
+        background-color: white;
+        color: #00B7EC;
+        border: 1px solid #00B7EC;
+
+    }
+}

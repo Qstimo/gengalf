@@ -1,0 +1,32 @@
+.Values {
+    background-color: #E9E9E9;
+    padding: 26px 0 26px;
+
+    @media(min-width: 850px) {
+        padding: 36px 0 36px;
+    }
+}
+
+.Values_container {
+    h2 {
+        color: #00B7EC;
+        font-weight: 400;
+        line-height: 38px;
+        font-size: 28px;
+        margin: 0 auto 10px;
+        text-align: center;
+        width: 210px;
+
+    }
+
+    @media(min-width:850px) {
+        h2 {
+            text-align: left;
+            font-weight: 300;
+            line-height: 49px;
+            font-size: 36px;
+            width: auto;
+            margin: 0 0 20px;
+        }
+    }
+}

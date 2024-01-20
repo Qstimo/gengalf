@@ -1,0 +1,195 @@
+.FormList {
+    background-image: url('./assets/img/bg_mob.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 800px) {
+        background-image: url('./assets/img/bg_desc.jpg');
+    }
+}
+
+.FormList {
+    padding: 18px 10px;
+
+    input {
+        font-size: 18px;
+
+    }
+
+    .Form_list_register {
+        background-color: #00B7EC;
+        color: white;
+        padding: 24px 30px 10px;
+        margin: 0 auto;
+
+        h3 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 38px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        padding: 60px 0 60px;
+
+        .Form_list_register {
+            h3 {
+                font-size: 36px;
+                line-height: 49px;
+            }
+
+            padding: 43px 130px 57px;
+            max-width: 840px;
+        }
+    }
+}
+
+.Form_list_register_data {
+    margin-bottom: 10px;
+}
+
+.Form_list_register_label {
+    position: relative;
+    margin-bottom: 6px;
+    display: block;
+
+    img {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+.job_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+
+    label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 20px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 7px;
+
+        .customRadio {
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            cursor: pointer;
+        }
+
+        .customRadio::before {
+            content: '';
+            height: 6px;
+            width: 6px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            display: none;
+        }
+
+        input[type=radio] {
+            display: none;
+        }
+
+        input[type=radio]:checked+.customRadio::before {
+            display: block;
+        }
+
+        @media (min-width: 800px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    h4 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 10px;
+
+        @media (min-width: 800px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+
+.Form_list_register_textarea {
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 18px;
+    height: 50px;
+    outline: 1px solid #666666;
+    margin-bottom: 21px;
+
+    @media (min-width: 800px) {
+        min-height: 100px;
+
+    }
+}
+
+.Form_list_register_btn_container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    label {
+        background-color: white;
+        border: 1px solid #9BCC37;
+        color: #9BCC37;
+        padding: 12px 17px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: var(--font-size-l);
+        cursor: pointer;
+        font-weight: 700;
+        height: 50px;
+        position: relative;
+
+        &:active {
+            background-color: #9BCC37;
+            color: white;
+        }
+    }
+
+    .Form_list_register_btn {
+        width: 100%;
+        text-align: center;
+
+        span {
+            margin: 0 auto;
+            position: relative;
+            padding-right: 35px;
+
+            img {
+                position: absolute;
+                right: 0;
+                top: 0px;
+            }
+        }
+
+    }
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+}

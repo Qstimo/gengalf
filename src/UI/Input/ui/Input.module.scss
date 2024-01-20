@@ -1,0 +1,23 @@
+.Input {
+    background-color: white;
+    padding: 14px 60px 14px 16px;
+    font: var(--font-m);
+    font-weight: 300px;
+    border: none;
+    outline: 1px solid #666666;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+
+
+}
+
+._red {
+    outline: 1px solid #FD7583;
+}
+
+._green {
+    outline: 1px solid #9BCC37;
+}
