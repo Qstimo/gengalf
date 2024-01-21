@@ -94,10 +94,15 @@
     ul {
         padding: 0 30px;
 
+
         li {
-            font-weight: 700;
             margin-bottom: 0px;
             transition: all 1s ease-in-out;
+            color: #00B7EC;
+            font-weight: 400;
+            text-transform: uppercase;
+
+
         }
     }
 
@@ -143,6 +148,7 @@
     ul {
         li {
             margin-bottom: 20px;
+            letter-spacing: 2px;
         }
     }
 }

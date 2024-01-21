@@ -154,26 +154,9 @@
 }
 
 .FAQ_list {
-    li {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        text-align: left;
-        color: #666666;
-        margin-bottom: 21px;
-        padding-left: 30px;
-        position: relative;
-        text-decoration: underline;
-    }
-
-    img {
-        position: absolute;
-        left: 0;
-    }
 
     @media (min-width: 800px) {
         margin-bottom: 32px;
-
     }
 
 }

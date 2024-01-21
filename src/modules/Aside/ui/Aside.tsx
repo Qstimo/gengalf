@@ -6,13 +6,28 @@ import PlayIc from './assets/img/play_btn.svg'
 import { Button } from '../../../UI/Button'
 import { ButtonTheme } from '../../../UI/Button/ui/Button'
 import qwestMen from './assets/img/qwest_men.png'
-import checkSvg from './assets/img/check_svg.svg'
+import { Accordion } from '../../../components/Accordion'
+
 
 const qwestArray = [
-    'На что нужно обратить внимание на собеседовании?',
-    'Как правильно составить резюме?',
-    'Возможно ли устроиться без опыта?',
-    'Ошибки на собеседовании. Чего нужно избегать?'
+    {
+        qwest: 'На что нужно обратить внимание на собеседовании?',
+        ans: ""
+
+    },
+    {
+        qwest: 'Как правильно составить резюме?',
+        ans: ' '
+    },
+    {
+        qwest: 'Возможно ли устроиться без опыта?',
+        ans: ' '
+    },
+    {
+        qwest: 'Ошибки на собеседовании. Чего нужно избегать?',
+        ans: ' '
+    },
+
 ]
 
 export const Aside = () => {
@@ -53,7 +68,9 @@ export const Aside = () => {
                         <div className={cls.FAQ_list}>
                             <h3>Ответы на вопросы</h3>
                             <ul>
-                                {qwestArray.map(e => <li key={e} className={cls.item}><img src={checkSvg} alt="check" />{e}</li>)}
+                                {qwestArray
+                                    .map(e => <Accordion key={e.qwest} qwest={e.qwest} ans={e.ans} />)
+                                }
                             </ul>
                         </div>
                         <img className={cls.FAQ_img} width={378} height={320} src={qwestMen} alt="Вопросы" />
