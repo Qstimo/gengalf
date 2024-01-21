@@ -66,5 +66,9 @@
         width: 565px;
         flex-direction: row;
         justify-content: space-between;
+
+        button:nth-child(2) {
+            padding: 12px 15px;
+        }
     }
 }
