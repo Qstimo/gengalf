@@ -20,8 +20,8 @@ export const useValidation = (value: string, validations: any) => {
                     re.test(String(value).toLowerCase()) ? setEmailError(false) : setEmailError(true);
                     break;
                 case 'IsPhone':
-                    const rePhone = /^^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/i;
-                    rePhone.test(value.toLowerCase()) ? setPhoneError(false) : setPhoneError(true);
+                    const rePhone = /^([+]?[0-9\s-\(\)]{3,25})*$/i;
+                    rePhone.test(String(value)) ? setPhoneError(false) : setPhoneError(true);
                     break;
             }
         }

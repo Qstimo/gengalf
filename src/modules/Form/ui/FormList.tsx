@@ -11,12 +11,10 @@ import scrapImg from './assets/icon/scrap_ic.svg'
 
 export const FormList = () => {
     const name = useInput('', { isEmpty: true, minLength: 3, });
-    const phone = useInput('', { isEmpty: true, isPhone: true, minLength: 8, });
+    const phone = useInput('', { isEmpty: true, IsPhone: true, minLength: 8, });
     const email = useInput('', { isEmpty: true, IsEmail: true, });
     const job = useInput('', { isEmpty: true, minLength: 3, });
-    const dataFile = (e: any) => {
-        e.preventDefault()
-    }
+
     return (
         <div className={cls.FormList}>
             <div className="content">
